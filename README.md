@@ -1,6 +1,10 @@
 # ITPFormsCV 
 Website created for Engineering Job Fair organized by BEST AGH Cracow. 
 
+# Technology stack
+* ReactJS
+* Firebase
+
 # Description 
 For the Engineering Job Fair, I created a simple form that allows students to submit their information and resume to a resume database that will be made available to the company
 
