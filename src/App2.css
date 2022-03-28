@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    display: grid;
+    grid-template-columns: 30% auto;
+    max-width: 800px;
+    gap: 1.5rem;
+    padding: 3rem 0;
+}
+
+picture img{
+    width: 60vw;
+}
+
+form input:not([type=file]) :not(.multi-select), form select {
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+    
+}
+
+form input{
+    text-align: center;
+    font-size: medium;
+}
+
+.hcaptcha, form input[type=submit]{
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+}
+
+form input[type=submit] {
+    background-color: #f78f27;
+    width: 50%;
+    color: white;
+    font-size: medium;
+    border-width: 1px;
+    border-color: #b5b5b5 ;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+form input[type=file]{
+    border-width: 1px;
+    border-color: #b5b5b5 ;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#inputWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+form input:not([type=checkbox]):not([type=file]), form select{
+    border-width: 1px;
+    border-color: #b5b5b5 ;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.dropdown-container{
+    max-width: 400px;
+  
+}
+
+
+
+#label > a { 
+    cursor: pointer;
+    color:  #f78f27;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        flex-direction: column;
+        /* margin: 0 3rem; */
+        text-align: center;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    form input:not([type=checkbox]):not([type=file]), form select{
+        width: 80%;
+    }
+
+    form label {
+        margin-top: 1rem;
+    }
+
+    #img1 {
+        display: none;
+    }
+    .dropdown-container{
+        min-width: 250px;
+      
+    }
+}

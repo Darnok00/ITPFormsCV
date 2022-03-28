@@ -1,38 +1,282 @@
 .App {
+
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  top:109px;
+
+}
+
+.captcha{
+
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown-container{
+  max-width: 300px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#input {
+
+  border-width: 1px;
+  border-color: #b5b5b5 ;
+  border-style: solid;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  left: 52%;
+  position: relative ;
+  text-align: center;
+  width: 300px; 
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+select {
+
+  border-width: 1px;
+  border-color: #b5b5b5 ;
+  border-style: solid;
+  border-radius: 5px;
+  bottom:5px;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: medium;
+  left: 52%;   
+  position: relative;
+  text-align-last: center;
+  text-align: center;
+  width: 305px;
+
+}
+.multi-select {
+  
+  border-width: 1px;
+  border-color: #b5b5b5 ;
+  border-radius: 5px;
+  color: BLACK;
+  font-size: medium;
+  font-family: 'Montserrat', sans-serif; 
+  left: 52%;
+  max-width: 303px;
+  position: relative;
+  text-align: center;
+  
+}
+#label {
+
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 27%;
+  font-size: medium;
+  
+}
+input[type=submit]{
+  
+  border-width: 1px;
+  border-color: #b5b5b5 ;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: #f78f27;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  left: 39.2%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  position: relative;
+  width: 300px;   
+
 }
 
-.App-link {
-  color: #61dafb;
+#input[type=checkbox]{
+  
+  font-family: 'Montserrat', sans-serif;
+  left: 51.5%;
+  position: relative;
+  transform: scale(1.5);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input[type=file]{
+
+  border-style: solid;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px ;
+  padding: 3px ;
+
+}
+
+#img1{
+
+  position: fixed;
+  top: 0%;
+  left:16%;
+  z-index: 1;
+
+}
+
+.hcaptcha{
+
+  text-align: center;
+
+}
+
+#span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+}
+
+@media only screen and (min-width: 601px) {
+
+  #img2{
+
+      visibility: hidden;
+
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 600px) {
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .App {
+
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+      top:50px;
+  
+  }
+  
+  #input {
+  
+      font-family: 'Montserrat', sans-serif;
+      position: relative ;
+      left: 54%;
+      text-align: center;
+      font-size: xx-small;
+      bottom:5px;
+      width: 130px;
+      border-width: 1px;
+      border-color: #b5b5b5 ;
+      border-style: solid;
+      border-radius: 5px;
+  
+  }
+
+  .hcaptcha{
+
+      text-align: center;
+
+  }
+
+  select {
+
+      font-family: 'Montserrat', sans-serif; 
+      position: relative;
+      border-width: 1px;
+      border-color: #b5b5b5 ;
+      border-style: solid;
+      border-radius: 5px;
+      text-align-last: center;
+      left: 54%;
+      text-align: center;
+      font-size: xx-small;
+      width: 134px;
+   
+  }
+
+  .multi-select {
+
+      font-family: 'Montserrat', sans-serif; 
+      position: relative;
+      left: 54%;
+      text-align: center;
+      color: BLACK;
+      max-width: 135px;
+      font-size: xx-small;
+      border-width: 1px;
+      border-color: #b5b5b5 ;
+      border-radius: 5px;
+  
+  }
+
+  #label {
+
+      font-family: 'Montserrat', sans-serif;
+      /* position: absolute; */
+      display: block;
+      left: 8%;
+      font-size: xx-small;
+      
+    }
+
+  input[type=submit]{
+
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+      left: 30%;
+      width: 150px;
+      font-size: medium;
+      background-color: #f78f27;
+      color: white;
+      border-width: 1px;
+      border-color: #b5b5b5 ;
+      border-style: solid;
+      border-radius: 5px;
+      margin-top: 50px;
+      margin-bottom: 80px;
+
+  }
+
+  #input[type=checkbox]{
+
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+      left: 51%;
+      transform: scale(0.8);
+      bottom: 3px;
+  
+  }
+  input[type=file]{
+
+      font-family: 'Montserrat', sans-serif;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 3px ;
+      margin-bottom: 30px ;
+      border-style: solid;
+      border-radius: 5px;
+
+  }
+
+  #img1{
+
+      visibility: hidden;
+
+  }
+  #img2{
+
+        position: fixed;
+        z-index: 1;
+        top: 0%;
+        left: 8%;
+        
+      
+      }
+
+  #span{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5px;
+  }
+  .hcaptcha{
+
+      text-align: center;
+      
   }
 }
